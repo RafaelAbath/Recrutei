@@ -21,13 +21,13 @@ Este repositório contém uma API em Laravel para gerenciar veículos, clientes,
 ### 1.1. Clonar o repositório
 
 ```bash
-git clone git@github.com:RafaelAbath/teste-recrutei.git
-cd locadora-api
+git clone git@github.com:RafaelAbath/recrutei.git
 ```
 
 ### 1.2. Copiar e configurar o `.env`
 
 ```bash
+cd src
 cp .env.example .env
 ```
 
