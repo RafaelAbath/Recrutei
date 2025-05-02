@@ -36,9 +36,9 @@ Edite o arquivo `.env` com as configurações:
 ```dotenv
 APP_NAME="Locadora API"
 APP_ENV=local
-APP_KEY=                        # será gerado abaixo
+APP_KEY=                    # será gerado abaixo
 APP_DEBUG=true
-APP_URL=http://localhost
+APP_URL=http://localhost/
 
 LOG_CHANNEL=stack
 
@@ -52,11 +52,13 @@ DB_PASSWORD=locadora
 CACHE_DRIVER=file
 QUEUE_CONNECTION=redis
 REDIS_HOST=redis
+REDIS_PORT=6379
+REDIS_PASSWORD=null
 
 SCOUT_DRIVER=elastic
 ELASTIC_HOST=elasticsearch:9200
 
-JWT_SECRET=                     # será gerado abaixo
+JWT_SECRET=                    # será gerado abaixo
 
 REPORT_SERVICE_URL=http://report:8000
 ```
