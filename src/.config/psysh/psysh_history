@@ -1,0 +1,10 @@
+curl -s -X POST http://localhost/api/register \
+     -H 'Content-Type: application/json' \
+     -d '{"name":"Pedro Dev","email":"pedro@example.com",
+          "password":"secret123","password_confirmation":"secret123"}' | jq
+exit
+docker compose exec app php artisan tinker
+>>> App\Models\Vehicle::search('mobi')->get();
+App\Models\Vehicle::search('mobi')->get();
+docker compose exec app curl -s 'elasticsearch:9200/vehicles/_search?q=mobi' | jq .
+
